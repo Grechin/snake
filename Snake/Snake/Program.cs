@@ -25,7 +25,7 @@ namespace Snake
 
             Console.ReadLine();  */
 
-            Console.SetBufferSize(80,25);
+            Console.SetBufferSize(80, 25);
 
             //Отрисовка рамочки
             HorizontalLine upline = new HorizontalLine(0, 78, 0, '+');
@@ -39,10 +39,8 @@ namespace Snake
 
             //Отрисовка точек
             Point p = new Point(4, 5, '*');
-            p.Draw();
-
-            Console.ReadLine();
-
+            Snake snake = new Snake(p, 4, Direction.RIGHT);
+            snake.Drow();
         }
     }
 }
